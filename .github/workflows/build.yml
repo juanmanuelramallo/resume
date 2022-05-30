@@ -10,7 +10,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: docker://pandoc/latex:latest
         with:
-          args: --output=output/result.pdf ${{ steps.files_list.outputs.files }}
           args: resume.md -s -o resume.pdf
 
       - name: Release
