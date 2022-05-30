@@ -1,0 +1,11 @@
+#!/bin/bash
+
+which pandoc
+if [ "$?" -gt 0 ]; then
+    echo "Install pandoc first. https://pandoc.org/installing.html"
+    exit 1
+fi
+
+# -s standalone
+# -o output
+pandoc resume.md -s -o resume.pdf
