@@ -13,7 +13,7 @@ jobs:
           args: resume.md -s -o resume.pdf
       - uses: docker://pandoc/latex:latest
         with:
-          args: coverletter.md -s -s coverletter.pdf
+          args: coverletter.md -s -o coverletter.pdf
 
       - name: Release
         uses: softprops/action-gh-release@v1
