@@ -9,3 +9,4 @@ fi
 # -s standalone
 # -o output
 pandoc resume.md -s -o resume.pdf
+pandoc coverletter.md -s -o coverletter.pdf

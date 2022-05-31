@@ -11,8 +11,13 @@ jobs:
       - uses: docker://pandoc/latex:latest
         with:
           args: resume.md -s -o resume.pdf
+      - uses: docker://pandoc/latex:latest
+        with:
+          args: coverletter.md -s -s coverletter.pdf
 
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: resume.pdf
+          files:
+            - resume.pdf
+            - coverletter.pdf
