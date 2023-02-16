@@ -79,7 +79,7 @@ _[github.com/rootstrap/yaaf](https://github.com/rootstrap/yaaf)_
 ## Formal Education
 
 ### Computer Engineering — Universidad Nacional de La Plata
-2013 - 2020
+2013 - 2021
 
 ## Volunteering
 
